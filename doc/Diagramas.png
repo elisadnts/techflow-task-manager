@@ -1,0 +1,6 @@
+Foi feito a criação de dois Diagramas, um diagrama de Classes, onde 'Tasks' tem atributos como (id, title, done e priority) e
+metodos (mark_done(), update(), delete()), e 'Kanban' tem uma lista de tasks e metodos (add_task(), list_tasks(), remove_task()), 
+representando o gerenciamento do quadro.
+
+E o Estudos de casos, onde o Usuário interage com todos os casos de uso
+
