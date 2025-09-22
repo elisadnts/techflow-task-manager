@@ -28,11 +28,7 @@ def get_tasks():
 @app.route("/tasks", methods=["POST"])
 def create_task():
     data = request.get_json()
-    task = {
-        "id": len(tasks) + 1,
-        "title": data.get("title"),
-        "status": "A Fazer"  # padrão inicial
-    }
+    task = {"id": len(tasks) + 1, "title": data["title"], "done": False, "priority": data.get("priority", "normal")}
     tasks.append(task)
     return jsonify(task), 201
 
